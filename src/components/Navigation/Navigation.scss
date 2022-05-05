@@ -1,0 +1,122 @@
+// let's style the navigation
+// import our mixns and variables
+@import '../../scss/mixins', '../../scss/variables';
+
+.fg__nav {
+  // we define this flex in the mixn file
+  @include flex(space-between, center);
+
+  // let's have some space of the edgs
+  max-width: 64.625rem;
+  margin: 0 auto; // to have smae space of the each end
+  padding: 0 3rem;
+
+  //scss supports to include files eaxh other
+  &--brand {
+    width: 11.625rem;
+    height: 3.5rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--links {
+    // the cascading here we defined in the component
+    ul {
+      @include flex(space-between, center);
+
+      a {
+        position: relative;
+        // let them sapce each other
+
+        &:not(:last-child) {
+          // except the last child all other will haev margin right
+          margin-right: 40px;
+        }
+
+        li {
+          @include body-font(18px, 400, $light-text);
+        }
+
+        // have hover indication
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0%;
+          bottom: 0%;
+
+          width: 0%; // we need widht to be 0% when we hover wa make him 100%
+          height: 2px;
+          background-color: $primary-blue;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    // let's hide the menu when the screen size is too small
+
+    @media (max-width: 802px) {
+      display: none;
+    }
+  }
+
+  // now let's style the cta button
+
+  &--cta {
+    @include flex(space-between, center);
+
+    button {
+      padding: 0.3rem 2rem;
+      background-color: transparent;
+
+      border: 0;
+      outline: none;
+
+      transform: scale(1);
+      border: 1px solid $light-text;
+      transition: all 0.3s ease-in-out;
+
+      // now style the text inside the btn
+      @include body-font(18px, 400, $light-text);
+
+      // hover the button
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+
+    // let's style the icons
+    svg {
+      // by default let's hide
+      display: none;
+      color: $light-text;
+      font-size: 35px;
+
+      cursor: pointer;
+      margin-left: 20px;
+
+      transform: scale(1);
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+
+      // hover
+      &:hover {
+        transform: scale(0.95);
+        opacity: 0.7;
+      }
+
+      // show the menu icon when the dsktop menu hide
+
+      @media (max-width: 802px) {
+        display: inline-flex;
+      }
+    }
+  }
+}
