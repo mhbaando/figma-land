@@ -15,6 +15,9 @@
 
   background: linear-gradient(270deg, $light-background 0%, transparent 100%);
 
+  // chnge transform origin
+  transform-origin: right;
+
   // hide mbile menu if the screen is enough for desktop icons
   @media (min-width: 807px) {
     display: none;
@@ -34,6 +37,7 @@
   background-color: $dark-background;
   padding: 4rem 0 0;
 
+  transform-origin: right;
   ul {
     a {
       li {

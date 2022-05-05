@@ -18,5 +18,3 @@ const Links = [
 ];
 
 export default Links;
-
-// menus is done let's uppload to the git hub
