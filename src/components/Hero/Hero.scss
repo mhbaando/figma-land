@@ -1,0 +1,122 @@
+// import our variables and mixins
+@import '../../scss/mixins', '../../scss/variables';
+
+.fg__hero {
+  // incase you foret we defined this mixin in the mixin folder
+  @include flex(center, center, column);
+  margin-top: 95px;
+  //   padding: 0 2rem;
+
+  // let's get rid of the horizetnal line
+  overflow-x: hidden;
+
+  h1 {
+    max-width: 680px;
+    text-align: center;
+
+    @include heading-font(55px, 600, $light-text, 130%);
+    text-transform: capitalize;
+    padding: 0 2rem;
+
+    // reduce the sixe of the font
+    @media (max-width: 569px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    @include body-font(20px, 400, $light-text, 120%);
+
+    max-width: 650px;
+    text-align: center;
+    padding: 0 2rem;
+
+    margin-bottom: 85px;
+
+    // reduce the sixe of the font
+    @media (max-width: 569px) {
+      font-size: 18px;
+    }
+  }
+
+  &--buttons {
+    @include flex(flex-start, center);
+
+    .primary-btn {
+      @include body-font(18px, 400, $light-text);
+      background-color: $primary-blue;
+
+      padding: 0.5rem 1.5rem;
+
+      border: none;
+      outline: none;
+      margin-right: 30px;
+
+      transition: all 0.3s ease-in-out;
+      border: 1px solid $primary-blue;
+
+      // hover
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $light-background;
+      }
+    }
+
+    .ghost-btn {
+      @include body-font(18px, 400, $light-text);
+      background-color: transparent;
+
+      border: none;
+      outline: none;
+      padding: 0.5rem 1.5rem;
+
+      border: 1px solid $light-background;
+      transition: all 0.3s ease-in-out;
+
+      // hover
+      &:hover {
+        background-color: $primary-blue;
+        border: 1px solid $primary-blue;
+      }
+    }
+  }
+
+  &--image {
+    position: relative; // we gave relative
+
+    max-width: 1550px;
+    height: auto;
+    margin-top: 35px;
+
+    img {
+      width: 100%;
+
+      // for small device let's give the image fixed width
+
+      @media (max-width: 540px) {
+        width: 539px;
+      }
+
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &::after {
+      content: '';
+      position: absolute; // to have this after a positoion absoulute
+      left: 0%;
+      bottom: 0%; // we need to at the bottom
+
+      width: 100%;
+      height: 100%;
+
+      // let's give him linear backg
+
+      background: linear-gradient(0deg, $dark-background 0%, transparent 100%);
+
+      // but we need him tom fit the counter let's remove the padding avove
+    }
+  }
+}
+
+// let's add some animation

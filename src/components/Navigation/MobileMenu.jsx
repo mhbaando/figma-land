@@ -14,7 +14,7 @@ const MobileMenu = () => {
       x: 0,
       transition: {
         staggertChildren: 0.1,
-        easing: 'easInOut',
+        easing: 'easeInOut',
         duration: 0.3,
       },
     },

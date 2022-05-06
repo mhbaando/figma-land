@@ -1,10 +1,11 @@
 // this is home page
-import { Header } from '../containers/index';
+import { Header, HeroContainer } from '../containers/index';
 
 const Home = () => {
   return (
     <>
       <Header />
+      <HeroContainer />
     </>
   );
 };
