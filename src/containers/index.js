@@ -2,3 +2,6 @@
 export { default as Header } from './Header';
 // export herecontainer here
 export { default as HeroContainer } from './HeroContainer';
+// featreus container
+export { default as FeaturesContainer } from './Features';
+export { default as ContentsContainer } from './Contents';

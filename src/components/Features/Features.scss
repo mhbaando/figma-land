@@ -1,0 +1,81 @@
+// import mixins and varaiables
+@import '../../scss/mixins', '../../scss/variables';
+
+.fg__features {
+  @include flex(space-between, center, column);
+
+  padding: 0 3rem;
+  margin-top: 6.25rem;
+
+  h1 {
+    @include heading-font(50px, 600, $light-text, 100%);
+    margin: 0;
+
+    @media (max-width: 550px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    text-align: center;
+    @include body-font(20px, 400, $light-text, 31px);
+
+    max-width: 750px;
+    margin: 27px 0 80px;
+
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.fg__features--info {
+  @include flex(space-between, center);
+
+  // at this size we need to be column aligend
+  @media (max-width: 1054px) {
+    flex-direction: column;
+  }
+
+  .image {
+    flex: 2;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .features {
+    flex: 1;
+    @include flex(flex-start, flex-start, column);
+
+    // let's align the for a row
+    @media (max-width: 1054px) {
+      @include flex(space-between, center);
+      margin-top: 50px;
+    }
+
+    @media (max-width: 918px) {
+      // restore to column layout
+      flex-direction: column;
+    }
+
+    .feature-1 {
+      @include flex(flex-start, flex-start, column);
+
+      .feature-icon {
+        @include flex(space-between, center);
+        h2 {
+          @include heading-font(20px, 600, $light-text, 21px);
+          max-width: 153px;
+          margin-left: 20px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -7,3 +7,9 @@ export { default as Navigation } from './Navigation/Navigation';
 
 // heero
 export { default as Hero } from './Hero/Hero';
+
+// features
+export { default as Features } from './Features/Features';
+
+// contents
+export { default as Contents } from './Contents/Contents';
