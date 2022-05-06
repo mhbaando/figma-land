@@ -28,8 +28,9 @@
 }
 
 .fg__contents--info {
-  @include flex(space-between, flex-start);
-  padding: 0 2rem;
+  width: 100%;
+  //   padding: 0 5rem;
+  @include flex(center, center);
 
   // let's make them responsive
   @media (max-width: 951px) {
@@ -39,10 +40,9 @@
   .info-1 {
     @include flex(space-between, center, column);
 
-    margin-top: 44px;
-    flex: 1;
-
     padding: 1rem;
+    margin-top: 44px;
+
     border-radius: 10px;
     background-color: $light-background;
 
@@ -78,14 +78,23 @@
       margin-bottom: 30px;
     }
 
+    @media (max-width: 650px) {
+      img {
+        width: 100%;
+      }
+    }
     // let's fix the image cousin over flow
     .image {
-      min-width: 400px;
+      max-width: 410px;
       height: 226px;
       overflow: hidden;
-
       //    we corpped the image 😢 sorry mr image
       // some how we have to resize that image in photoshop
+
+      @media (max-width: 951px) {
+        max-width: 100%;
+      }
+
       img {
         width: 100%;
       }
