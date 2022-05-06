@@ -90,6 +90,9 @@
       &:hover {
         transform: scale(0.95);
       }
+      @media (max-width: 802px) {
+        display: none;
+      }
     }
 
     // let's style the icons

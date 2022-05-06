@@ -21,11 +21,12 @@
     // reduce the sixe of the font
     @media (max-width: 569px) {
       font-size: 40px;
+      padding: 0 4rem;
     }
   }
 
   p {
-    @include body-font(20px, 400, $light-text, 120%);
+    @include body-font(20px, 400, $light-text, 30px);
 
     max-width: 650px;
     text-align: center;
@@ -36,11 +37,20 @@
     // reduce the sixe of the font
     @media (max-width: 569px) {
       font-size: 18px;
+      padding: 0 4rem;
     }
   }
 
   &--buttons {
     @include flex(flex-start, center);
+    padding: 0 3rem;
+
+    @media (max-width: 650px) {
+      .primary-btn,
+      .ghost-btn {
+        padding: 0.5rem 1rem !important;
+      }
+    }
 
     .primary-btn {
       @include body-font(18px, 400, $light-text);
