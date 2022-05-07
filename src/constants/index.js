@@ -8,6 +8,12 @@ import Feature_2 from '../assets/feature-2.png';
 import Feature_3 from '../assets/feature-3.png';
 import WorkImage from '../assets/Mackbook Pro.png';
 import RealData from '../assets/data.png';
+import AppleStore from '../assets/appStore.png';
+import AppAir from '../assets/apairy.png';
+import Android from '../assets/android.png';
+import BaseCamp from '../assets/basecamp.png';
+import Airpnp from '../assets/airbnb.png';
+import IBM from '../assets/ibm.png';
 
 // export as objetc file
 // will come back letter to export many images
@@ -20,6 +26,12 @@ const Images = {
   Feature_3,
   WorkImage,
   RealData,
+  AppleStore,
+  AppAir,
+  Android,
+  BaseCamp,
+  Airpnp,
+  IBM,
 };
 
 // then export here as defualt

@@ -13,3 +13,6 @@ export { default as Features } from './Features/Features';
 
 // contents
 export { default as Contents } from './Contents/Contents';
+
+// partenres
+export { default as Partners } from './Partners/Partners';

@@ -4,4 +4,7 @@ export { default as Header } from './Header';
 export { default as HeroContainer } from './HeroContainer';
 // featreus container
 export { default as FeaturesContainer } from './Features';
+/// content container
 export { default as ContentsContainer } from './Contents';
+// patner container
+export { default as PartnersContainer } from './Partners';
