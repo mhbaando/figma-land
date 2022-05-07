@@ -15,6 +15,14 @@ import BaseCamp from '../assets/basecamp.png';
 import Airpnp from '../assets/airbnb.png';
 import IBM from '../assets/ibm.png';
 
+import Drone from '../assets/drone.png';
+import Tablet from '../assets/tablet.png';
+import Meeting from '../assets/meeting.png';
+import DoMore from '../assets/doMore.png';
+import Code from '../assets/coding.png';
+import labtop from '../assets/laptop.png';
+import Camera from '../assets/camera.png';
+
 // export as objetc file
 // will come back letter to export many images
 const Images = {
@@ -32,6 +40,14 @@ const Images = {
   BaseCamp,
   Airpnp,
   IBM,
+
+  Drone,
+  Tablet,
+  Meeting,
+  DoMore,
+  Code,
+  labtop,
+  Camera,
 };
 
 // then export here as defualt

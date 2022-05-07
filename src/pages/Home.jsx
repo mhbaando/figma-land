@@ -5,6 +5,7 @@ import {
   FeaturesContainer,
   ContentsContainer,
   PartnersContainer,
+  GallertContainer,
 } from '../containers/index';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroContainer />
       <FeaturesContainer />
       <ContentsContainer />
+      <GallertContainer />
       <PartnersContainer />
     </>
   );

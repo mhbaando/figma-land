@@ -16,3 +16,6 @@ export { default as Contents } from './Contents/Contents';
 
 // partenres
 export { default as Partners } from './Partners/Partners';
+
+// gallery
+export { default as Gallery } from './Gallery/Gallery';

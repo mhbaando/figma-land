@@ -8,3 +8,5 @@ export { default as FeaturesContainer } from './Features';
 export { default as ContentsContainer } from './Contents';
 // patner container
 export { default as PartnersContainer } from './Partners';
+// gallery container
+export { default as GallertContainer } from './Gallery';
