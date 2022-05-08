@@ -10,3 +10,5 @@ export { default as ContentsContainer } from './Contents';
 export { default as PartnersContainer } from './Partners';
 // gallery container
 export { default as GallertContainer } from './Gallery';
+// testtimonails contaiern
+export { default as TestimonialsContaier } from './Testimonials';

@@ -23,6 +23,11 @@ import Code from '../assets/coding.png';
 import labtop from '../assets/laptop.png';
 import Camera from '../assets/camera.png';
 
+import Bell from '../assets/bell.png';
+import Lane from '../assets/lane.png';
+import Fisher from '../assets/fisher.png';
+import Murphy from '../assets/murphy.png';
+
 // export as objetc file
 // will come back letter to export many images
 const Images = {
@@ -48,6 +53,12 @@ const Images = {
   Code,
   labtop,
   Camera,
+
+  // testimonials persoenl images
+  Bell,
+  Lane,
+  Fisher,
+  Murphy,
 };
 
 // then export here as defualt

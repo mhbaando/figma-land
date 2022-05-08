@@ -9,13 +9,21 @@
   h1 {
     @include heading-font(50px, 600, $light-text, 100%);
     margin: 0 0 10px;
+    @media (max-width: 550px) {
+      font-size: 40px;
+    }
   }
 
   p {
     @include body-font(20px, 400, $light-text, 150%);
     max-width: 571px;
+
     text-align: center;
     margin-bottom: 50px;
+
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
   }
 }
 

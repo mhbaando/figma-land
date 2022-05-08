@@ -19,3 +19,6 @@ export { default as Partners } from './Partners/Partners';
 
 // gallery
 export { default as Gallery } from './Gallery/Gallery';
+
+// testiminaails
+export { default as Testimonials } from './Testimonials/Testimonials';

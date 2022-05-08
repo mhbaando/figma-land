@@ -1,0 +1,66 @@
+// import mixns and variables
+@import '../../scss/mixins', '../../scss/variables';
+
+.fg__testimonails {
+  @include flex(space-between, center, column);
+
+  padding: 0 3rem;
+  margin-top: 100px;
+
+  h1 {
+    @include heading-font(50px, 600, $light-text, 100%);
+
+    @media (max-width: 550px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.fg__testimonials-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 20px;
+
+  // also we should giv max width
+  max-width: 850px;
+  margin-top: 50px;
+
+  // let's make them responsive
+
+  @media (max-width: 750px) {
+    grid-template: auto/1fr;
+  }
+}
+
+.testimonial {
+  @include flex(flex-start, flex-start, column);
+
+  padding: 2rem;
+  background-color: transparent;
+
+  border-radius: 10px;
+  border: 1px solid $light-background;
+
+  .title-holder {
+    @include flex(flex-start, center);
+    margin-bottom: 20px;
+
+    img {
+      margin-right: 20px;
+    }
+
+    .title {
+      h4 {
+        @include heading-font(16px, 600, $light-text, 100%);
+        margin: 0 0 5px;
+      }
+      p {
+        @include body-font(14px, 400, $light-text, 100%);
+      }
+    }
+  }
+
+  p {
+    @include body-font(18px, 400, $light-background, 180%);
+  }
+}
