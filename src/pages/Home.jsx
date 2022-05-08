@@ -8,19 +8,23 @@ import {
   GallertContainer,
   TestimonialsContaier,
   CTAContainer,
+  FooterContainer,
 } from '../containers/index';
 
 const Home = () => {
   return (
     <>
       <Header />
-      <HeroContainer />
-      <FeaturesContainer />
-      <ContentsContainer />
-      <GallertContainer />
-      <PartnersContainer />
-      <TestimonialsContaier />
-      <CTAContainer />
+      <main>
+        <HeroContainer />
+        <FeaturesContainer />
+        <ContentsContainer />
+        <GallertContainer />
+        <PartnersContainer />
+        <TestimonialsContaier />
+        <CTAContainer />
+      </main>
+      <FooterContainer />
     </>
   );
 };

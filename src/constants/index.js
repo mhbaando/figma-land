@@ -30,6 +30,12 @@ import Murphy from '../assets/murphy.png';
 
 import CTA from '../assets/proto.png';
 
+import location from '../assets/map.png';
+import phone from '../assets/phone.png';
+import facebook from '../assets/facebook.png';
+import twitter from '../assets/twitter.png';
+import linkedin from '../assets/linkedIn.png';
+
 // export as objetc file
 // will come back letter to export many images
 const Images = {
@@ -63,6 +69,12 @@ const Images = {
   Murphy,
 
   CTA,
+
+  location,
+  phone,
+  facebook,
+  twitter,
+  linkedin,
 };
 
 // then export here as defualt

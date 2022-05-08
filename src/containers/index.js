@@ -14,3 +14,5 @@ export { default as GallertContainer } from './Gallery';
 export { default as TestimonialsContaier } from './Testimonials';
 // cta contiane r
 export { default as CTAContainer } from './CTA';
+// footer
+export { default as FooterContainer } from './Footer';

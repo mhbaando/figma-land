@@ -1,0 +1,57 @@
+@import '../../scss/variables', '../../scss/mixins';
+
+.fg__footer {
+  display: grid;
+  // let's make last column more wider then others
+  grid-template: auto / repeat(3, 1fr) 2fr;
+  gap: 20px;
+
+  max-width: 1040px;
+  margin: 100px auto 0;
+  padding: 0 3rem 50px;
+
+  @media (max-width: 620px) {
+    grid-template: auto / repeat(2, 1fr);
+  }
+
+  // for small screen
+  @media (max-width: 450px) {
+    grid-template: auto/1fr;
+  }
+
+  .links {
+    @include flex(space-between, flex-start, column);
+
+    h2 {
+      @include heading-font(16px, 600, $light-text, 150%);
+    }
+
+    a {
+      @include body-font(16px, 400, $light-text, 180%);
+    }
+  }
+
+  .addresses {
+    @include flex(space-between, flex-start, column);
+
+    .address {
+      @include flex(flex-start, center);
+      img {
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        @include body-font(16px, 400, $light-text);
+      }
+    }
+  }
+
+  .social {
+    @include flex(flex-start, center);
+    img {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
