@@ -12,3 +12,5 @@ export { default as PartnersContainer } from './Partners';
 export { default as GallertContainer } from './Gallery';
 // testtimonails contaiern
 export { default as TestimonialsContaier } from './Testimonials';
+// cta contiane r
+export { default as CTAContainer } from './CTA';

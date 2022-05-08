@@ -1,0 +1,71 @@
+@import '../../scss/mixins', '../../scss/variables';
+
+.fg__cta {
+  @include flex(center, center);
+
+  margin-top: 100px;
+  padding: 0 3rem;
+
+  @media (max-width: 550px) {
+    padding: 0;
+  }
+}
+
+.fg__cta--container {
+  @include flex(space-between, center);
+
+  padding: 0 0 0 3rem;
+  border-radius: 10px;
+  background-color: $gray-background;
+
+  // let's giv him max widith
+  max-width: 1219px;
+
+  @media (max-width: 1018px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 550px) {
+    padding: 0 2rem;
+  }
+  .fg__cta-info {
+    flex: 1;
+
+    @media (max-width: 1018px) {
+      @include flex(center, center, column);
+    }
+    h2 {
+      @include body-font(50px, 400, $light-text, 120%);
+
+      @media (max-width: 1018px) {
+        font-size: 40px;
+
+        max-width: 400px;
+        text-align: center;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1.5rem;
+
+      background-color: $primary-blue;
+      @include body-font(18px, 400, $light-text);
+
+      border: none;
+      outline: none;
+    }
+  }
+
+  .fg__cta-image {
+    flex: 1;
+
+    @media (max-width: 1018px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

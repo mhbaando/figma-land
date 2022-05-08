@@ -28,6 +28,8 @@ import Lane from '../assets/lane.png';
 import Fisher from '../assets/fisher.png';
 import Murphy from '../assets/murphy.png';
 
+import CTA from '../assets/proto.png';
+
 // export as objetc file
 // will come back letter to export many images
 const Images = {
@@ -59,6 +61,8 @@ const Images = {
   Lane,
   Fisher,
   Murphy,
+
+  CTA,
 };
 
 // then export here as defualt

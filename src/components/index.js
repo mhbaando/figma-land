@@ -22,3 +22,6 @@ export { default as Gallery } from './Gallery/Gallery';
 
 // testiminaails
 export { default as Testimonials } from './Testimonials/Testimonials';
+
+// Call to Action
+export { default as CTA } from './CTA/CTA';

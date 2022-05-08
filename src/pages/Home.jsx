@@ -7,6 +7,7 @@ import {
   PartnersContainer,
   GallertContainer,
   TestimonialsContaier,
+  CTAContainer,
 } from '../containers/index';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <GallertContainer />
       <PartnersContainer />
       <TestimonialsContaier />
+      <CTAContainer />
     </>
   );
 };
